@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="CMC.TS.Biz.Helper" Version="2.0.0.5" />
+    <PackageReference Include="CMC.TS.Distributed.Cache.Core" Version="1.0.0.16" />
+    <PackageReference Include="EasyNetQ" Version="3.1.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.20" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.20">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.20" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.20">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CMC.TS.Data.Access\CMC.TS.UMS.Data.Access.csproj" />
+    <ProjectReference Include="..\CMC.TS.UMS.Biz.Model\CMC.TS.UMS.Biz.Model.csproj" />
+    <ProjectReference Include="..\CMC.TS.UMS.Data.Model\CMC.TS.UMS.Data.Model.csproj" />
+  </ItemGroup>
+
+</Project>
